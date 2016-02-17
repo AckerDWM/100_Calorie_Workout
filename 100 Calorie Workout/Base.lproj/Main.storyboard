@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -949,15 +949,8 @@
                                     <action selector="twitterBtn:" destination="cZy-6X-iXB" eventType="touchUpInside" id="lcu-Ph-qbv"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="That's 100% of your daily goal!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDY-HE-ccR">
-                                <rect key="frame" x="43" y="488" width="326.5" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You burned 100 calories today!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72V-ch-syW">
-                                <rect key="frame" x="41" y="450" width="331" height="30"/>
+                                <rect key="frame" x="41" y="480" width="331" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -966,16 +959,14 @@
                         </subviews>
                         <color key="backgroundColor" red="0.74117647058823533" green="0.0039215686274509803" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="yC4-sl-n0b" firstAttribute="top" secondItem="72V-ch-syW" secondAttribute="bottom" constant="8" id="5AW-3F-jtc"/>
                             <constraint firstAttribute="trailingMargin" secondItem="G5l-tC-oTH" secondAttribute="trailing" constant="20" id="6U2-ld-z5J"/>
                             <constraint firstItem="yC4-sl-n0b" firstAttribute="bottom" secondItem="xHE-v2-ez9" secondAttribute="bottom" id="6a9-eC-4hd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="6Z5-Wd-o1S" secondAttribute="trailing" id="92N-y8-r90"/>
                             <constraint firstItem="Z9h-fw-2J5" firstAttribute="centerX" secondItem="LtV-1E-a3r" secondAttribute="centerX" id="Axj-99-j94"/>
-                            <constraint firstItem="jDY-HE-ccR" firstAttribute="top" secondItem="72V-ch-syW" secondAttribute="bottom" constant="8" id="Dfe-aq-Y4G"/>
-                            <constraint firstItem="jDY-HE-ccR" firstAttribute="centerX" secondItem="LtV-1E-a3r" secondAttribute="centerX" id="Dr4-Fw-ZJx"/>
                             <constraint firstItem="wDQ-ZU-idj" firstAttribute="leading" secondItem="LtV-1E-a3r" secondAttribute="leadingMargin" constant="-20" id="IeM-38-jpY"/>
                             <constraint firstItem="G5l-tC-oTH" firstAttribute="bottom" secondItem="xHE-v2-ez9" secondAttribute="bottom" id="L3T-Wn-08t"/>
                             <constraint firstItem="0rV-g8-kj9" firstAttribute="leading" secondItem="LtV-1E-a3r" secondAttribute="leadingMargin" constant="-20" id="M5c-Ws-Au0"/>
-                            <constraint firstItem="72V-ch-syW" firstAttribute="centerX" secondItem="LtV-1E-a3r" secondAttribute="centerX" id="MhQ-1E-VjN"/>
                             <constraint firstItem="0rV-g8-kj9" firstAttribute="top" secondItem="xHE-v2-ez9" secondAttribute="bottom" constant="19" id="Q5W-lJ-y9Y"/>
                             <constraint firstItem="lh6-al-uBJ" firstAttribute="top" secondItem="0rV-g8-kj9" secondAttribute="bottom" id="QhL-6C-ef4"/>
                             <constraint firstItem="xHE-v2-ez9" firstAttribute="centerX" secondItem="LtV-1E-a3r" secondAttribute="centerX" id="SZ6-Er-f7Z"/>
@@ -985,18 +976,18 @@
                             <constraint firstAttribute="leadingMargin" secondItem="6Z5-Wd-o1S" secondAttribute="leading" id="YJv-qL-78h"/>
                             <constraint firstItem="6Z5-Wd-o1S" firstAttribute="top" secondItem="wDQ-ZU-idj" secondAttribute="bottom" constant="8" id="axl-kA-jfL"/>
                             <constraint firstAttribute="leadingMargin" secondItem="DbW-ft-sWo" secondAttribute="leading" id="eWa-hz-D8g"/>
-                            <constraint firstItem="yC4-sl-n0b" firstAttribute="top" secondItem="jDY-HE-ccR" secondAttribute="bottom" id="g5o-wn-6Mz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="72V-ch-syW" secondAttribute="trailing" constant="22" id="eac-oJ-UWi"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0rV-g8-kj9" secondAttribute="trailing" constant="-20" id="iMS-TE-9ON"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wDQ-ZU-idj" secondAttribute="trailing" constant="-20" id="iXM-2Z-hC5"/>
                             <constraint firstItem="Z9h-fw-2J5" firstAttribute="top" secondItem="6Z5-Wd-o1S" secondAttribute="bottom" constant="-5.5" id="nOs-Lk-RDb"/>
                             <constraint firstItem="DbW-ft-sWo" firstAttribute="top" secondItem="Z9h-fw-2J5" secondAttribute="bottom" constant="-6.5" id="otJ-C3-Jop"/>
+                            <constraint firstItem="72V-ch-syW" firstAttribute="leading" secondItem="LtV-1E-a3r" secondAttribute="leadingMargin" constant="21" id="ta5-ED-Vh2"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="caloriesBurnedLabel" destination="Z9h-fw-2J5" id="2mk-Gs-Fq6"/>
                         <outlet property="caloriesBurnedTodayLabel" destination="72V-ch-syW" id="cfj-b2-LVG"/>
-                        <outlet property="percentOfGoalLabel" destination="jDY-HE-ccR" id="ciY-bq-Tey"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CUG-v7-LHB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1005,7 +996,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="3HJ-1w-ZuR"/>
         <segue reference="KTn-yO-pX5"/>
+        <segue reference="hAC-6S-Jlb"/>
     </inferredMetricsTieBreakers>
 </document>
