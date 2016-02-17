@@ -19,8 +19,8 @@ class TrackProgressVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 		
-		let calories = UserProfile.calorieHistory.map({ $0.calories })
-		let dates = UserProfile.calorieHistory.map({ $0.date })
+		let calories = History.workoutHistoryCalories
+		let dates = History.workoutHistoryDates
 		
 		if calories.count > 1 {
 			chart.Y = calories

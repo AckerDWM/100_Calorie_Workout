@@ -24,11 +24,11 @@ class MyDayVC: UIViewController {
 		progressCircle.circlePercent = 0
 		progressCircle.setNeedsDisplay()
 		circleAnimationTimer = NSTimer.scheduledTimerWithTimeInterval(0.05, target: self, selector: "animateCircle", userInfo: nil, repeats: true)
-		calCountLabel.text = String(UserProfile.caloriesBurnedToday)
-		if UserProfile.caloriesBurnedToday < UserProfile.dailyCalorieGoal {
-			textView.text = "Burn \(UserProfile.dailyCalorieGoal - UserProfile.caloriesBurnedToday) more to reach your daily goal"
+		calCountLabel.text = String(History.caloriesBurnedToday)
+		if History.caloriesBurnedToday < UserProfile.dailyCalorieGoal {
+			textView.text = "Burn \(UserProfile.dailyCalorieGoal - History.caloriesBurnedToday) more to reach your daily goal"
 		} else {
-			textView.text = "Well done; you've reached your calorie goal for today!"
+			textView.text = "Well done! You've reached your calorie goal for today!"
 		}
 		textView.textAlignment = .Center
 		textView.textColor = UIColor.whiteColor()
@@ -38,7 +38,7 @@ class MyDayVC: UIViewController {
 		progressCircle.circlePercent = CGFloat(i) / CGFloat(UserProfile.dailyCalorieGoal)
 		progressCircle.setNeedsDisplay()
 		i += 1
-		if i > UserProfile.caloriesBurnedToday {
+		if i > History.caloriesBurnedToday {
 			circleAnimationTimer.invalidate()
 		}
 	}

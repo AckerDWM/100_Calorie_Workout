@@ -16,14 +16,14 @@ class WorkoutOverVC: UIViewController {
 	@IBOutlet weak var caloriesBurnedTodayLabel: UILabel!
 	
 	@IBAction func rateMeBtn(sender: AnyObject) {
-		UIApplication.sharedApplication().openURL(NSURL(string : "itms-apps://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=<iTUNES CONNECT APP ID>")!)
+		UIApplication.sharedApplication().openURL(NSURL(string : "itms-apps://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=<963626507>")!)
 		// not right ID
 	}
 	
 	@IBAction func fbBtn(sender: AnyObject) {
 		if SLComposeViewController.isAvailableForServiceType(SLServiceTypeFacebook) {
 			let fbVC = SLComposeViewController(forServiceType: SLServiceTypeFacebook)
-			fbVC.setInitialText("I burned \(UserProfile.caloriesBurnedToday) calories today with '100 Calorie Workout'!")
+			fbVC.setInitialText("I burned \(History.caloriesBurnedToday) calories today with '100 Calorie Workout'!")
 			self.presentViewController(fbVC, animated: true, completion: nil)
 		}
 	}
@@ -31,7 +31,7 @@ class WorkoutOverVC: UIViewController {
 	@IBAction func twitterBtn(sender: AnyObject) {
 		if SLComposeViewController.isAvailableForServiceType(SLServiceTypeTwitter) {
 			let tweetVC = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
-			tweetVC.setInitialText("I burned \(UserProfile.caloriesBurnedToday) calories today! #100CalorieWorkout")
+			tweetVC.setInitialText("I burned \(History.caloriesBurnedToday) calories today! #100CalorieWorkout")
 			self.presentViewController(tweetVC, animated: true, completion: nil)
 		}
 	}
@@ -49,10 +49,10 @@ class WorkoutOverVC: UIViewController {
 		
 		let percentComplete = Double(CurrentWorkout.numberOfExerciseCycles - CurrentWorkout.exercisesRemaining) / Double(CurrentWorkout.numberOfExerciseCycles)
 		let caloriesBurned = Int(0.0175 * UserProfile.weightInKg * 14.5 * (Double(CurrentWorkout.numberOfExerciseCycles) / 2.0) * percentComplete)
-		UserProfile.caloriesBurnedToday += caloriesBurned
-		let percentOfGoalComplete = Int((Double(UserProfile.caloriesBurnedToday) / Double(UserProfile.dailyCalorieGoal)) * 100)
+		History.caloriesBurnedToday += caloriesBurned
+		let percentOfGoalComplete = Int((Double(History.caloriesBurnedToday) / Double(UserProfile.dailyCalorieGoal)) * 100)
 		caloriesBurnedLabel.text = String(caloriesBurned)
-		caloriesBurnedTodayLabel.text = "You burned \(UserProfile.caloriesBurnedToday) calories today!"
+		caloriesBurnedTodayLabel.text = "You burned \(History.caloriesBurnedToday) calories today!"
 		percentOfGoalLabel.text = "That's \(percentOfGoalComplete)% of your daily goal"
     }
 

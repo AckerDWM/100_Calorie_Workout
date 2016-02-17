@@ -13,30 +13,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
 
+	
+	var historyRefreshTimer = NSTimer()
 
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		// Override point for customization after application launch.
 		
-		// MARK: Load saved user info
-		UserProfile.caloriesBurnedToday = NSUserDefaults.standardUserDefaults().integerForKey("caloriesBurnedToday")
-		UserProfile.dailyCalorieGoal = NSUserDefaults.standardUserDefaults().integerForKey("dailyCalorieGoal")
-		if UserProfile.dailyCalorieGoal == 0 {
-			UserProfile.dailyCalorieGoal = 100
-		}
-		UserProfile.weight = NSUserDefaults.standardUserDefaults().doubleForKey("weight")
-		if UserProfile.weight == 0.0 {
-			UserProfile.weight = 150.0
-		}
+		SavingAndLoading.loadData()
 		
-		// MARK: Other initiation
-		NSNotificationCenter.defaultCenter().addObserver(self, selector: "dayChanged", name: NSCalendarDayChangedNotification, object: nil)
+		historyRefreshTimer = NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: "refreshHistory", userInfo: nil, repeats: true)
+		
 		CurrentWorkout.currentExercisesIdxs = CurrentWorkout.shuffleExercises()
 		
 		return true
+		
 	}
 	
-	func dayChanged() {
-		UserProfile.caloriesBurnedToday = 0
+	func refreshHistory() {
+		History.updatedHistory()
 	}
 
 	func applicationWillResignActive(application: UIApplication) {
@@ -48,9 +42,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		// Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
 		// If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 		
-		NSUserDefaults.standardUserDefaults().setInteger(UserProfile.caloriesBurnedToday, forKey: "caloriesBurnedToday")
-		NSUserDefaults.standardUserDefaults().setInteger(UserProfile.dailyCalorieGoal, forKey: "dailyCalorieGoal")
-		NSUserDefaults.standardUserDefaults().setDouble(UserProfile.weight, forKey: "weight")
+		SavingAndLoading.saveData()
+		
 	}
 
 	func applicationWillEnterForeground(application: UIApplication) {
@@ -64,11 +57,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	func applicationWillTerminate(application: UIApplication) {
 		// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 		
-		NSUserDefaults.standardUserDefaults().setInteger(UserProfile.caloriesBurnedToday, forKey: "caloriesBurnedToday")
-		NSUserDefaults.standardUserDefaults().setInteger(UserProfile.dailyCalorieGoal, forKey: "dailyCalorieGoal")
-		NSUserDefaults.standardUserDefaults().setDouble(UserProfile.weight, forKey: "weight")
+		SavingAndLoading.saveData()
+		
 	}
-
 
 }
 

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		BB438F451C5439B500650E08 /* TrackProgressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB438F441C5439B500650E08 /* TrackProgressVC.swift */; };
+		BB7F9C491C74BFCB001C9655 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BB7F9C481C74BFCB001C9655 /* Default-568h@2x.png */; };
+		BB7F9C4B1C74C435001C9655 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7F9C4A1C74C435001C9655 /* History.swift */; };
+		BB7F9C4D1C74CD88001C9655 /* SavingAndLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7F9C4C1C74CD88001C9655 /* SavingAndLoading.swift */; };
 		BBB0B9331C4E80FB00342AC9 /* MyDayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB0B9321C4E80FB00342AC9 /* MyDayVC.swift */; };
 		BBB0B9391C4E8CBB00342AC9 /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB0B9381C4E8CBB00342AC9 /* BarView.swift */; };
 		BBC95C141C4ACA6200C23BC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC95C131C4ACA6200C23BC7 /* AppDelegate.swift */; };
@@ -46,6 +49,9 @@
 
 /* Begin PBXFileReference section */
 		BB438F441C5439B500650E08 /* TrackProgressVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackProgressVC.swift; sourceTree = "<group>"; };
+		BB7F9C481C74BFCB001C9655 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		BB7F9C4A1C74C435001C9655 /* History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		BB7F9C4C1C74CD88001C9655 /* SavingAndLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavingAndLoading.swift; sourceTree = "<group>"; };
 		BBB0B9321C4E80FB00342AC9 /* MyDayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDayVC.swift; sourceTree = "<group>"; };
 		BBB0B9381C4E8CBB00342AC9 /* BarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
 		BBC95C101C4ACA6200C23BC7 /* 100 Calorie Workout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "100 Calorie Workout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +125,8 @@
 		BBB0B9361C4E81E200342AC9 /* Shared Structs */ = {
 			isa = PBXGroup;
 			children = (
+				BB7F9C4C1C74CD88001C9655 /* SavingAndLoading.swift */,
+				BB7F9C4A1C74C435001C9655 /* History.swift */,
 				BBE1725D1C4D67DC008598C0 /* UserProfile.swift */,
 				BBC95C411C4B004600C23BC7 /* CurrentWorkout.swift */,
 			);
@@ -138,6 +146,7 @@
 		BBC95C071C4ACA6200C23BC7 = {
 			isa = PBXGroup;
 			children = (
+				BB7F9C481C74BFCB001C9655 /* Default-568h@2x.png */,
 				BBC95C121C4ACA6200C23BC7 /* 100 Calorie Workout */,
 				BBC95C271C4ACA6300C23BC7 /* 100 Calorie WorkoutTests */,
 				BBC95C321C4ACA6300C23BC7 /* 100 Calorie WorkoutUITests */,
@@ -296,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBC95C1E1C4ACA6300C23BC7 /* LaunchScreen.storyboard in Resources */,
+				BB7F9C491C74BFCB001C9655 /* Default-568h@2x.png in Resources */,
 				BBC95C1B1C4ACA6300C23BC7 /* Assets.xcassets in Resources */,
 				BBC95C191C4ACA6300C23BC7 /* Main.storyboard in Resources */,
 			);
@@ -322,6 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB7F9C4B1C74C435001C9655 /* History.swift in Sources */,
 				BBC95C161C4ACA6200C23BC7 /* MainVC.swift in Sources */,
 				BBB0B9391C4E8CBB00342AC9 /* BarView.swift in Sources */,
 				BBC95C421C4B004600C23BC7 /* CurrentWorkout.swift in Sources */,
@@ -335,6 +346,7 @@
 				BBC95C141C4ACA6200C23BC7 /* AppDelegate.swift in Sources */,
 				BBE172601C4D7135008598C0 /* MenuBtn.swift in Sources */,
 				BBCDB3A51C54269C0016A5BF /* ChartView.swift in Sources */,
+				BB7F9C4D1C74CD88001C9655 /* SavingAndLoading.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
