@@ -1,0 +1,32 @@
+Exported knockout PTZ videos for PB1 #1-4
+
+Ran genotyping PCR for PTZ animals PB1 #1-4
+
+Toed and tailed as necessary (YFP colony)
+— Note: think about a use for the YFP mice…
+
+Made 1X aCSF
+
+Sent extracted MHFE2 data to Meera
+
+Freeze knockout PTZ tails for S4D #1-3
+
+____________
+To do:
+
+Cryoprotect S4D / Fc infusion brains from last week
+
+Run gel for today’s genotyping
+
+Analyze knockout PTZ videos for PB1 #1-4
+— Do before looking at genotyping gel!
+
+____________
+Tm:
+
+Infuse mouse ____ with Fc 
+— then aCSF perfuse
+— then drop fix 30 min
+— then cryoprotect in 30% sucrose overnight
+
+Make 4% PFA

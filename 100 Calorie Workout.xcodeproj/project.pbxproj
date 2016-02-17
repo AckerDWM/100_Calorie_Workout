@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB438F451C5439B500650E08 /* TrackProgressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB438F441C5439B500650E08 /* TrackProgressVC.swift */; };
+		BBB0B9331C4E80FB00342AC9 /* MyDayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB0B9321C4E80FB00342AC9 /* MyDayVC.swift */; };
+		BBB0B9391C4E8CBB00342AC9 /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB0B9381C4E8CBB00342AC9 /* BarView.swift */; };
 		BBC95C141C4ACA6200C23BC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC95C131C4ACA6200C23BC7 /* AppDelegate.swift */; };
-		BBC95C161C4ACA6200C23BC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC95C151C4ACA6200C23BC7 /* ViewController.swift */; };
+		BBC95C161C4ACA6200C23BC7 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC95C151C4ACA6200C23BC7 /* MainVC.swift */; };
 		BBC95C191C4ACA6300C23BC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBC95C171C4ACA6300C23BC7 /* Main.storyboard */; };
 		BBC95C1B1C4ACA6300C23BC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBC95C1A1C4ACA6300C23BC7 /* Assets.xcassets */; };
 		BBC95C1E1C4ACA6300C23BC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBC95C1C1C4ACA6300C23BC7 /* LaunchScreen.storyboard */; };
 		BBC95C291C4ACA6300C23BC7 /* _00_Calorie_WorkoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC95C281C4ACA6300C23BC7 /* _00_Calorie_WorkoutTests.swift */; };
 		BBC95C341C4ACA6300C23BC7 /* _00_Calorie_WorkoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC95C331C4ACA6300C23BC7 /* _00_Calorie_WorkoutUITests.swift */; };
+		BBC95C421C4B004600C23BC7 /* CurrentWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC95C411C4B004600C23BC7 /* CurrentWorkout.swift */; };
+		BBC95C441C4B010600C23BC7 /* WorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC95C431C4B010600C23BC7 /* WorkoutVC.swift */; };
+		BBC95C461C4C3D1500C23BC7 /* WorkoutOverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC95C451C4C3D1500C23BC7 /* WorkoutOverVC.swift */; };
+		BBCDB3A51C54269C0016A5BF /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCDB3A41C54269C0016A5BF /* ChartView.swift */; };
+		BBE1725E1C4D67DC008598C0 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE1725D1C4D67DC008598C0 /* UserProfile.swift */; };
+		BBE172601C4D7135008598C0 /* MenuBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE1725F1C4D7135008598C0 /* MenuBtn.swift */; };
+		BBE172621C4D7546008598C0 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE172611C4D7546008598C0 /* SettingsVC.swift */; };
+		BBE172641C4D934A008598C0 /* UserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE172631C4D934A008598C0 /* UserProfileVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +45,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB438F441C5439B500650E08 /* TrackProgressVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackProgressVC.swift; sourceTree = "<group>"; };
+		BBB0B9321C4E80FB00342AC9 /* MyDayVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDayVC.swift; sourceTree = "<group>"; };
+		BBB0B9381C4E8CBB00342AC9 /* BarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
 		BBC95C101C4ACA6200C23BC7 /* 100 Calorie Workout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "100 Calorie Workout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC95C131C4ACA6200C23BC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BBC95C151C4ACA6200C23BC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BBC95C151C4ACA6200C23BC7 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		BBC95C181C4ACA6300C23BC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BBC95C1A1C4ACA6300C23BC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBC95C1D1C4ACA6300C23BC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +61,14 @@
 		BBC95C2F1C4ACA6300C23BC7 /* 100 Calorie WorkoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "100 Calorie WorkoutUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC95C331C4ACA6300C23BC7 /* _00_Calorie_WorkoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _00_Calorie_WorkoutUITests.swift; sourceTree = "<group>"; };
 		BBC95C351C4ACA6300C23BC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBC95C411C4B004600C23BC7 /* CurrentWorkout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWorkout.swift; sourceTree = "<group>"; };
+		BBC95C431C4B010600C23BC7 /* WorkoutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutVC.swift; sourceTree = "<group>"; };
+		BBC95C451C4C3D1500C23BC7 /* WorkoutOverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutOverVC.swift; sourceTree = "<group>"; };
+		BBCDB3A41C54269C0016A5BF /* ChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		BBE1725D1C4D67DC008598C0 /* UserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		BBE1725F1C4D7135008598C0 /* MenuBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBtn.swift; sourceTree = "<group>"; };
+		BBE172611C4D7546008598C0 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		BBE172631C4D934A008598C0 /* UserProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +96,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BBB0B9341C4E811100342AC9 /* Workout VCs */ = {
+			isa = PBXGroup;
+			children = (
+				BBC95C431C4B010600C23BC7 /* WorkoutVC.swift */,
+				BBC95C451C4C3D1500C23BC7 /* WorkoutOverVC.swift */,
+			);
+			name = "Workout VCs";
+			sourceTree = "<group>";
+		};
+		BBB0B9351C4E812600342AC9 /* Settings VCs */ = {
+			isa = PBXGroup;
+			children = (
+				BBE172611C4D7546008598C0 /* SettingsVC.swift */,
+				BBB0B9321C4E80FB00342AC9 /* MyDayVC.swift */,
+				BBE172631C4D934A008598C0 /* UserProfileVC.swift */,
+				BB438F441C5439B500650E08 /* TrackProgressVC.swift */,
+			);
+			name = "Settings VCs";
+			sourceTree = "<group>";
+		};
+		BBB0B9361C4E81E200342AC9 /* Shared Structs */ = {
+			isa = PBXGroup;
+			children = (
+				BBE1725D1C4D67DC008598C0 /* UserProfile.swift */,
+				BBC95C411C4B004600C23BC7 /* CurrentWorkout.swift */,
+			);
+			name = "Shared Structs";
+			sourceTree = "<group>";
+		};
+		BBB0B9371C4E81F100342AC9 /* UI Elements */ = {
+			isa = PBXGroup;
+			children = (
+				BBE1725F1C4D7135008598C0 /* MenuBtn.swift */,
+				BBB0B9381C4E8CBB00342AC9 /* BarView.swift */,
+				BBCDB3A41C54269C0016A5BF /* ChartView.swift */,
+			);
+			name = "UI Elements";
+			sourceTree = "<group>";
+		};
 		BBC95C071C4ACA6200C23BC7 = {
 			isa = PBXGroup;
 			children = (
@@ -98,7 +159,11 @@
 			isa = PBXGroup;
 			children = (
 				BBC95C131C4ACA6200C23BC7 /* AppDelegate.swift */,
-				BBC95C151C4ACA6200C23BC7 /* ViewController.swift */,
+				BBC95C151C4ACA6200C23BC7 /* MainVC.swift */,
+				BBB0B9341C4E811100342AC9 /* Workout VCs */,
+				BBB0B9351C4E812600342AC9 /* Settings VCs */,
+				BBB0B9361C4E81E200342AC9 /* Shared Structs */,
+				BBB0B9371C4E81F100342AC9 /* UI Elements */,
 				BBC95C171C4ACA6300C23BC7 /* Main.storyboard */,
 				BBC95C1A1C4ACA6300C23BC7 /* Assets.xcassets */,
 				BBC95C1C1C4ACA6300C23BC7 /* LaunchScreen.storyboard */,
@@ -193,6 +258,7 @@
 				TargetAttributes = {
 					BBC95C0F1C4ACA6200C23BC7 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 82UBK6MX6M;
 					};
 					BBC95C231C4ACA6300C23BC7 = {
 						CreatedOnToolsVersion = 7.2;
@@ -256,8 +322,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBC95C161C4ACA6200C23BC7 /* ViewController.swift in Sources */,
+				BBC95C161C4ACA6200C23BC7 /* MainVC.swift in Sources */,
+				BBB0B9391C4E8CBB00342AC9 /* BarView.swift in Sources */,
+				BBC95C421C4B004600C23BC7 /* CurrentWorkout.swift in Sources */,
+				BBE1725E1C4D67DC008598C0 /* UserProfile.swift in Sources */,
+				BBB0B9331C4E80FB00342AC9 /* MyDayVC.swift in Sources */,
+				BB438F451C5439B500650E08 /* TrackProgressVC.swift in Sources */,
+				BBC95C441C4B010600C23BC7 /* WorkoutVC.swift in Sources */,
+				BBC95C461C4C3D1500C23BC7 /* WorkoutOverVC.swift in Sources */,
+				BBE172641C4D934A008598C0 /* UserProfileVC.swift in Sources */,
+				BBE172621C4D7546008598C0 /* SettingsVC.swift in Sources */,
 				BBC95C141C4ACA6200C23BC7 /* AppDelegate.swift in Sources */,
+				BBE172601C4D7135008598C0 /* MenuBtn.swift in Sources */,
+				BBCDB3A51C54269C0016A5BF /* ChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,9 +476,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "100 Calorie Workout/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "DanielAcker.-00-Calorie-Workout";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DanielAcker.-00-Calorie-Workout";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -410,9 +488,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "100 Calorie Workout/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "DanielAcker.-00-Calorie-Workout";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DanielAcker.-00-Calorie-Workout";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -484,6 +563,7 @@
 				BBC95C3A1C4ACA6300C23BC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BBC95C3B1C4ACA6300C23BC7 /* Build configuration list for PBXNativeTarget "100 Calorie WorkoutTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +572,7 @@
 				BBC95C3D1C4ACA6300C23BC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BBC95C3E1C4ACA6300C23BC7 /* Build configuration list for PBXNativeTarget "100 Calorie WorkoutUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +581,7 @@
 				BBC95C401C4ACA6300C23BC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
